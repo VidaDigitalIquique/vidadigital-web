@@ -21,7 +21,7 @@ function renderNavbar(activePage) {
 }
 
 function renderFooter() {
-  return '\n<footer class="bg-surface-container-low border-t border-outline-variant">\n<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter max-w-container-max mx-auto px-margin-desktop py-12 w-full">\n<div class="space-y-stack-md">\n<div class="text-headline-md font-headline-md text-primary">Vida Digital</div>\n<p class="text-body-md text-on-surface-variant">Tu aliado estratégico en importaciones desde Iquique para todo Chile.</p>\n</div>\n<div class="space-y-stack-md">\n<h4 class="text-label-md font-label-md text-primary uppercase tracking-widest">Navegación</h4>\n<ul class="space-y-2">\n<li><a class="text-on-surface-variant hover:text-primary underline transition-all text-body-md" href="index.html">Inicio</a></li>\n<li><a class="text-on-surface-variant hover:text-primary underline transition-all text-body-md" href="nosotros.html">Nosotros</a></li>\n<li><a class="text-on-surface-variant hover:text-primary underline transition-all text-body-md" href="catalogo.html">Catálogo</a></li>\n<li><a class="text-on-surface-variant hover:text-primary underline transition-all text-body-md" href="marcas.html">Marcas Propias</a></li>\n</ul>\n</div>\n<div class="space-y-stack-md">\n<h4 class="text-label-md font-label-md text-primary uppercase tracking-widest">Contacto</h4>\n<ul class="space-y-2 text-body-md text-on-surface-variant">\n<li>ZOFRI, Manzana 12, Galpón 24, Iquique</li>\n<li>Tel: (57) 226 2878</li>\n<li><!-- WIDGET GOOGLE REVIEWS --></li>\n</ul>\n</div>\n<div class="space-y-stack-md">\n<h4 class="text-label-md font-label-md text-primary uppercase tracking-widest">Únete a nuestro grupo</h4>\n<p class="text-body-md text-on-surface-variant mb-3">Recibe novedades y ofertas exclusivas por WhatsApp.</p>\n<a class="inline-flex items-center gap-2 px-6 py-3 text-label-md font-label-md text-white rounded transition-all hover:brightness-110 active:scale-95 no-underline" style="background:#25D366" href="https://wa.me/56993427191" target="_blank" rel="noopener">\n<span class="material-symbols-outlined">chat</span>\nUnirme al grupo\n</a>\n</div>\n</div>\n<div class="border-t border-outline-variant py-6 px-margin-desktop text-center">\n<p class="text-label-sm text-on-surface-variant">© <span id="year"></span> Vida Digital. Todos los derechos reservados. ZOFRI, Manzana 12, Galpón 24, Iquique.</p>\n</div>\n</footer>';
+  return '\n<footer class="bg-surface-container-low border-t border-outline-variant">\n<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter max-w-container-max mx-auto px-margin-desktop py-12 w-full">\n<div class="space-y-stack-md">\n<div class="text-headline-md font-headline-md text-primary">Vida Digital</div>\n<p class="text-body-md text-on-surface-variant">Tu aliado estratégico en importaciones desde Iquique para todo Chile.</p>\n</div>\n<div class="space-y-stack-md">\n<h4 class="text-label-md font-label-md text-primary uppercase tracking-widest">Navegación</h4>\n<ul class="space-y-2">\n<li><a class="text-on-surface-variant hover:text-primary underline transition-all text-body-md" href="index.html">Inicio</a></li>\n<li><a class="text-on-surface-variant hover:text-primary underline transition-all text-body-md" href="nosotros.html">Nosotros</a></li>\n<li><a class="text-on-surface-variant hover:text-primary underline transition-all text-body-md" href="catalogo.html">Catálogo</a></li>\n<li><a class="text-on-surface-variant hover:text-primary underline transition-all text-body-md" href="marcas.html">Marcas Propias</a></li>\n</ul>\n</div>\n<div class="space-y-stack-md">\n<h4 class="text-label-md font-label-md text-primary uppercase tracking-widest">Contacto</h4>\n<ul class="space-y-2 text-body-md text-on-surface-variant">\n<li>ZOFRI, Manzana 12, Galpón 24, Iquique</li>\n<li>Tel: (57) 226 2878</li>\n<li><!-- WIDGET GOOGLE REVIEWS --></li>\n</ul>\n</div>\n<div class="space-y-stack-md">\n<h4 class="text-label-md font-label-md text-primary uppercase tracking-widest">Únete a nuestro grupo</h4>\n<p class="text-body-md text-on-surface-variant mb-3">Recibe novedades y ofertas exclusivas por WhatsApp.</p>\n<a class="inline-flex items-center gap-2 px-6 py-3 text-label-md font-label-md text-white rounded transition-all hover:brightness-110 active:scale-95 no-underline" style="background:#25D366" href="https://wa.me/56993427191" target="_blank" rel="noopener">\n<span class="material-symbols-outlined">chat</span>\nUnirme al grupo\n</a>\n</div>\n</div>\n<div class="border-t border-outline-variant py-6 px-margin-desktop text-center">\n<p class="text-label-sm text-on-surface-variant">© <span id="year"></span> Import & Export Vida Digital Ltda.</p>\n</div>\n</footer>';
 }
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -37,4 +37,20 @@ document.addEventListener('DOMContentLoaded', function() {
       yearEl.textContent = new Date().getFullYear();
     }
   }
+
+  // Inject global hover styles
+  var style = document.createElement('style');
+  style.textContent = '\
+    a[href], button {\
+      transition: box-shadow 0.25s ease, transform 0.2s ease;\
+    }\
+    a[href]:hover, button:hover {\
+      transform: translateY(-2px) scale(1.02);\
+      box-shadow: 0 0 0 3px rgba(220,38,38,0.35), 0 8px 24px rgba(220,38,38,0.18);\
+    }\
+    a[href*="wa.me"]:hover, a[style*="25D366"]:hover, button[style*="25D366"]:hover {\
+      box-shadow: 0 0 0 3px rgba(37,211,102,0.4), 0 8px 24px rgba(37,211,102,0.2);\
+    }\
+  ';
+  document.head.appendChild(style);
 });
