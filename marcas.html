@@ -135,8 +135,10 @@
 <!-- Brand Section 1: Vida Digital -->
 <section class="py-section-padding border-t border-outline-variant">
 <div class="max-w-container-max mx-auto px-margin-desktop">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
-<div>
+<!-- BLOQUE SUPERIOR: dos columnas -->
+<div style="display:flex; flex-wrap:wrap; gap:2rem; align-items:center;">
+<!-- Columna izquierda 60% -->
+<div style="flex:1 1 60%; min-width:300px;">
 <div class="flex items-center gap-4 mb-stack-md">
 <span class="px-3 py-1 bg-accent-red/10 text-accent-red border border-accent-red/20 text-label-sm font-label-sm">DESIGNED IN USA</span>
 </div>
@@ -144,33 +146,6 @@
 <p class="text-headline-md font-headline-md text-accent-red mb-stack-lg italic">"Electrodomésticos de uso diario. Rotación garantizada."</p>
 <div class="space-y-stack-md text-body-md font-body-md text-secondary">
 <p>Vida Digital es nuestra línea de electrodomésticos para el hogar diseñada bajo estándares norteamericanos para el mercado de consumo masivo. Hervidores, licuadoras, ventiladores, freidoras de aire, hornillos, picadoras, sandwicheras — los productos que cualquier hogar latinoamericano necesita y cualquier punto de venta puede mover. Cada referencia está seleccionada por su relación precio-calidad y por su historial de rotación real en el mercado.</p>
-</div>
-<!-- Product Videos -->
-<div class="mt-stack-lg">
-<h3 class="text-headline-md font-headline-md text-brand-dark mb-stack-md">Nuestros productos en acción</h3>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
-<div style="background:#fff; border-radius:12px; box-shadow:0 2px 12px rgba(0,0,0,0.08); overflow:hidden; padding-bottom:1rem;">
-<video autoplay muted loop playsinline style="width:100%; border-radius:12px 12px 0 0; display:block;">
-<source src="https://res.cloudinary.com/dxkidwxjl/video/upload/v1779820995/VD-007_pvd7s5.mp4" type="video/mp4">
-</video>
-<p style="padding:0.75rem 1rem; font-weight:600;">VD-0007 — Olla Multiusos</p>
-<p style="padding:0 1rem; color:#dc2626; font-style:italic; font-size:0.9rem;">"Cocina inteligente, resultados perfectos."</p>
-</div>
-<div style="background:#fff; border-radius:12px; box-shadow:0 2px 12px rgba(0,0,0,0.08); overflow:hidden; padding-bottom:1rem;">
-<video autoplay muted loop playsinline style="width:100%; border-radius:12px 12px 0 0; display:block;">
-<source src="https://res.cloudinary.com/dxkidwxjl/video/upload/v1779820995/VD-19_fp0bi9.mp4" type="video/mp4">
-</video>
-<p style="padding:0.75rem 1rem; font-weight:600;">VD-0019 — Freidora de Aire 10L</p>
-<p style="padding:0 1rem; color:#dc2626; font-style:italic; font-size:0.9rem;">"Cocina sin aceite. Vive sin culpa."</p>
-</div>
-<div style="background:#fff; border-radius:12px; box-shadow:0 2px 12px rgba(0,0,0,0.08); overflow:hidden; padding-bottom:1rem;">
-<video autoplay muted loop playsinline style="width:100%; border-radius:12px 12px 0 0; display:block;">
-<source src="https://res.cloudinary.com/dxkidwxjl/video/upload/v1779820996/VD-20_e1mvg7.mp4" type="video/mp4">
-</video>
-<p style="padding:0.75rem 1rem; font-weight:600;">VD-20 — Freidora de Aire 6L</p>
-<p style="padding:0 1rem; color:#dc2626; font-style:italic; font-size:0.9rem;">"Freír más rápido, comer más saludable."</p>
-</div>
-</div>
 </div>
 <div class="mt-stack-lg grid grid-cols-2 gap-stack-md">
 <div class="p-4 bg-brand-grey border border-outline-variant">
@@ -181,6 +156,34 @@
 <span class="material-symbols-outlined text-accent-red mb-2">local_shipping</span>
 <h4 class="text-label-md font-label-md text-on-surface">Stock Inmediato</h4>
 </div>
+</div>
+</div>
+<!-- Columna derecha 40%: video VD-007 -->
+<div style="flex:0 0 40%; min-width:250px; display:flex; justify-content:center; align-items:flex-start;">
+<video autoplay muted loop playsinline style="width:100%; max-width:280px; aspect-ratio:9/16; border-radius:16px; object-fit:cover;">
+<source src="https://res.cloudinary.com/dxkidwxjl/video/upload/v1779820995/VD-007_pvd7s5.mp4" type="video/mp4">
+</video>
+</div>
+</div>
+<!-- BLOQUE INFERIOR: dos columnas 50/50 -->
+<div style="margin-top:2rem;">
+<h3 class="text-headline-md font-headline-md text-brand-dark mb-stack-md text-center">Nuestros productos en acción</h3>
+<div style="display:flex; flex-wrap:wrap; gap:2rem; max-width:600px; margin:0 auto; justify-content:center;">
+<!-- VD-19 -->
+<div style="flex:1 1 280px; max-width:280px; text-align:center;">
+<video autoplay muted loop playsinline style="width:100%; aspect-ratio:9/16; border-radius:16px; object-fit:cover;">
+<source src="https://res.cloudinary.com/dxkidwxjl/video/upload/v1779820995/VD-19_fp0bi9.mp4" type="video/mp4">
+</video>
+<p style="padding-top:0.5rem; font-weight:600;">VD-0019 — Freidora de Aire 10L</p>
+<p style="color:#dc2626; font-style:italic; font-size:0.9rem;">"Cocina sin aceite. Vive sin culpa."</p>
+</div>
+<!-- VD-20 -->
+<div style="flex:1 1 280px; max-width:280px; text-align:center;">
+<video autoplay muted loop playsinline style="width:100%; aspect-ratio:9/16; border-radius:16px; object-fit:cover;">
+<source src="https://res.cloudinary.com/dxkidwxjl/video/upload/v1779820996/VD-20_e1mvg7.mp4" type="video/mp4">
+</video>
+<p style="padding-top:0.5rem; font-weight:600;">VD-20 — Freidora de Aire 6L</p>
+<p style="color:#dc2626; font-style:italic; font-size:0.9rem;">"Freír más rápido, comer más saludable."</p>
 </div>
 </div>
 </div>
