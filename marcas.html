@@ -135,10 +135,9 @@
 <!-- Brand Section 1: Vida Digital -->
 <section class="py-section-padding border-t border-outline-variant">
 <div class="max-w-container-max mx-auto px-margin-desktop">
-<!-- BLOQUE SUPERIOR: dos columnas -->
-<div style="display:flex; flex-wrap:wrap; gap:2rem; align-items:center;">
-<!-- Columna izquierda 60% -->
-<div style="flex:1 1 60%; min-width:300px;">
+<div class="vida-digital-layout" style="display:grid; grid-template-columns:1fr 1fr; align-items:start; gap:2rem;">
+<!-- COLUMNA IZQUIERDA -->
+<div>
 <div class="flex items-center gap-4 mb-stack-md">
 <span class="px-3 py-1 bg-accent-red/10 text-accent-red border border-accent-red/20 text-label-sm font-label-sm">DESIGNED IN USA</span>
 </div>
@@ -157,36 +156,40 @@
 <h4 class="text-label-md font-label-md text-on-surface">Stock Inmediato</h4>
 </div>
 </div>
-</div>
-<!-- Columna derecha 40%: video VD-007 -->
-<div style="flex:0 0 40%; min-width:250px; display:flex; justify-content:center; align-items:flex-start;">
-<video autoplay muted loop playsinline style="width:100%; max-width:280px; aspect-ratio:9/16; border-radius:16px; object-fit:cover;">
-<source src="https://res.cloudinary.com/dxkidwxjl/video/upload/v1779820995/VD-007_pvd7s5.mp4" type="video/mp4">
-</video>
-</div>
-</div>
-<!-- BLOQUE INFERIOR: dos columnas 50/50 -->
-<div style="margin-top:2rem;">
-<h3 class="text-headline-md font-headline-md text-brand-dark mb-stack-md text-center">Nuestros productos en acción</h3>
-<div style="display:flex; flex-wrap:wrap; gap:2rem; max-width:600px; margin:0 auto; justify-content:center;">
-<!-- VD-19 -->
-<div style="flex:1 1 280px; max-width:280px; text-align:center;">
+<!-- Mini videos -->
+<div style="margin-top:1.5rem; display:flex; gap:1rem; flex-wrap:wrap;">
+<div style="max-width:160px;">
 <video autoplay muted loop playsinline style="width:100%; aspect-ratio:9/16; border-radius:16px; object-fit:cover;">
 <source src="https://res.cloudinary.com/dxkidwxjl/video/upload/v1779820995/VD-19_fp0bi9.mp4" type="video/mp4">
 </video>
-<p style="padding-top:0.5rem; font-weight:600;">VD-0019 — Freidora de Aire 10L</p>
-<p style="color:#dc2626; font-style:italic; font-size:0.9rem;">"Cocina sin aceite. Vive sin culpa."</p>
+<p style="font-weight:600; font-size:0.8rem; margin-top:0.35rem;">VD-0019 — Freidora de Aire 10L</p>
+<p style="color:#dc2626; font-style:italic; font-size:0.75rem;">"Cocina sin aceite. Vive sin culpa."</p>
 </div>
-<!-- VD-20 -->
-<div style="flex:1 1 280px; max-width:280px; text-align:center;">
+<div style="max-width:160px;">
 <video autoplay muted loop playsinline style="width:100%; aspect-ratio:9/16; border-radius:16px; object-fit:cover;">
 <source src="https://res.cloudinary.com/dxkidwxjl/video/upload/v1779820996/VD-20_e1mvg7.mp4" type="video/mp4">
 </video>
-<p style="padding-top:0.5rem; font-weight:600;">VD-20 — Freidora de Aire 6L</p>
-<p style="color:#dc2626; font-style:italic; font-size:0.9rem;">"Freír más rápido, comer más saludable."</p>
+<p style="font-weight:600; font-size:0.8rem; margin-top:0.35rem;">VD-20 — Freidora de Aire 6L</p>
+<p style="color:#dc2626; font-style:italic; font-size:0.75rem;">"Freír más rápido, comer más saludable."</p>
 </div>
 </div>
 </div>
+<!-- COLUMNA DERECHA: VD-007 -->
+<div style="justify-self:center; text-align:center; max-width:320px;">
+<video autoplay muted loop playsinline style="width:100%; max-width:320px; aspect-ratio:9/16; border-radius:16px; object-fit:cover;">
+<source src="https://res.cloudinary.com/dxkidwxjl/video/upload/v1779820995/VD-007_pvd7s5.mp4" type="video/mp4">
+</video>
+<p style="font-weight:600; margin-top:0.5rem;">VD-0007 — Olla Multiusos</p>
+<p style="color:#dc2626; font-style:italic; font-size:0.9rem;">"Cocina inteligente, resultados perfectos."</p>
+</div>
+</div>
+<style>
+@media (max-width:767px) {
+.vida-digital-layout { grid-template-columns:1fr !important; }
+.vida-digital-layout > div:last-child { order:-1; }
+.vida-digital-layout > div:last-child video { max-width:260px !important; }
+}
+</style>
 </div>
 </section>
 <!-- Brand Section 2: Holystar (Alternating Layout) -->
