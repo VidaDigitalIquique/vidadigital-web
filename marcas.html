@@ -115,25 +115,7 @@
     </style>
 </head>
 <body class="selection:bg-accent-red selection:text-white">
-<!-- TopNavBar -->
-<header class="bg-surface border-b border-outline-variant docked full-width top-0 sticky z-50">
-<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-desktop w-full h-20">
-<div class="text-title-lg font-headline-lg font-bold text-primary">Vida Digital</div>
-<nav class="hidden md:flex items-center gap-stack-lg">
-<a class="text-label-md font-label-md text-on-surface-variant font-medium hover:text-primary transition-colors duration-200" href="index.html">Inicio</a>
-<a class="text-label-md font-label-md text-on-surface-variant font-medium hover:text-primary transition-colors duration-200" href="nosotros.html">Nosotros</a>
-<a class="text-label-md font-label-md text-on-surface-variant font-medium hover:text-primary transition-colors duration-200" href="catalogo.html">Catálogo</a>
-<a class="text-label-md font-label-md text-primary font-bold border-b-2 border-primary pb-1" href="marcas.html">Marcas Propias</a>
-<a class="text-label-md font-label-md text-on-surface-variant font-medium hover:text-primary transition-colors duration-200" href="contacto.html">Contacto</a>
-</nav>
-<div class="flex items-center gap-stack-md">
-<button class="text-label-md font-label-md px-stack-lg py-2 border border-outline-variant text-on-surface hover:bg-surface-container-low transition-all active:scale-95">Ingresar</button>
-<button class="md:hidden text-on-surface">
-<span class="material-symbols-outlined">menu</span>
-</button>
-</div>
-</div>
-</header>
+<div id="navbar" data-active="marcas"></div>
 <main>
 <!-- Hero Section / Intro -->
 <section class="relative py-section-padding overflow-hidden">
@@ -158,6 +140,7 @@
 <div class="flex items-center gap-4 mb-stack-md">
 <span class="px-3 py-1 bg-accent-red/10 text-accent-red border border-accent-red/20 text-label-sm font-label-sm">DESIGNED IN USA</span>
 </div>
+<img alt="Vida Digital" class="h-12 w-auto mb-stack-md" src="assets/logos/vida-digital.jpeg"/>
 <h2 class="text-display-lg font-display-lg mb-2 text-[#0f172a]">Vida Digital</h2>
 <p class="text-headline-md font-headline-md text-accent-red mb-stack-lg italic">"Tecnología que se vende sola."</p>
 <div class="space-y-stack-md text-body-md font-body-md text-secondary">
@@ -198,6 +181,7 @@
 <div class="flex items-center gap-4 mb-stack-md">
 <span class="px-3 py-1 bg-primary/10 text-primary border border-primary/20 text-label-sm font-label-sm">DESIGNED IN GERMANY</span>
 </div>
+<img alt="Holystar" class="h-12 w-auto mb-stack-md" src="assets/logos/holystar.jpeg"/>
 <h2 class="text-display-lg font-display-lg mb-2 text-[#0f172a]">Holystar</h2>
 <p class="text-headline-md font-headline-md text-primary mb-stack-lg italic">"Diseño europeo. Precio de mercado masivo."</p>
 <div class="space-y-stack-md text-body-md font-body-md text-secondary">
@@ -248,53 +232,8 @@
 </div>
 </section>
 </main>
-<!-- Footer -->
-<footer class="bg-surface-container-low border-t border-outline-variant">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter max-w-container-max mx-auto px-margin-desktop py-12 w-full">
-<div class="space-y-stack-md">
-<div class="text-headline-md font-headline-md text-primary">Vida Digital</div>
-<p class="text-body-md font-body-md text-on-surface-variant">Más de 25 años liderando la importación y distribución mayorista en la región.</p>
-<div class="flex items-center gap-2">
-<img alt="Google logo" class="w-5 h-5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxMEztb_Et4na6ppzNmLXr4IYSrVaJwZUgdaeVpTdDzvOqoiTIqhxOeXNB87a6fGPhPGXLVcs986KDKKS83iuus6Xvk_MrnRJfJbnyzUFk9crQpR6MsECylpMCDJd6bOIR9EQppMR3FwLcIo-b74_RoKuvp0fqFhW-UwTcxI54tBkkm87wFY3QKQY95eDEuXLM1SQNF_olaz4xnR1i_y2ArMoUM85xgowRmrEQt2LlRIpedXuO9LRlDHy-6-lC24A4u6OQeQOw0ajG"/>
-<span class="text-label-sm font-label-sm text-on-surface-variant">Google Rating 4.9/5 ★</span>
-</div>
-</div>
-<div class="space-y-stack-md">
-<h4 class="text-label-md font-label-md text-accent-red uppercase tracking-widest">Navegación</h4>
-<nav class="flex flex-col gap-2">
-<a class="text-body-md font-body-md text-on-surface-variant hover:text-primary underline transition-all" href="index.html">Inicio</a>
-<a class="text-body-md font-body-md text-on-surface-variant hover:text-primary underline transition-all" href="nosotros.html">Nosotros</a>
-<a class="text-body-md font-body-md text-on-surface-variant hover:text-primary underline transition-all" href="catalogo.html">Catálogo</a>
-<a class="text-body-md font-body-md text-primary font-semibold" href="marcas.html">Marcas Propias</a>
-</nav>
-</div>
-<div class="space-y-stack-md">
-<h4 class="text-label-md font-label-md text-accent-red uppercase tracking-widest">Legal</h4>
-<nav class="flex flex-col gap-2">
-<a class="text-body-md font-body-md text-on-surface-variant hover:text-primary underline transition-all" href="#">Términos y Condiciones</a>
-<a class="text-body-md font-body-md text-on-surface-variant hover:text-primary underline transition-all" href="#">Política de Privacidad</a>
-<a class="text-body-md font-body-md text-on-surface-variant hover:text-primary underline transition-all" href="#">Garantías</a>
-<a class="text-body-md font-body-md text-on-surface-variant hover:text-primary underline transition-all" href="contacto.html">Contacto</a>
-</nav>
-</div>
-<div class="space-y-stack-md">
-<h4 class="text-label-md font-label-md text-accent-red uppercase tracking-widest">Contacto</h4>
-<div class="text-body-md font-body-md text-on-surface-variant space-y-2">
-<p class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">location_on</span> ZOFRI, Manzana 12, Galpón 24, Iquique.</p>
-<p class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">call</span> (57) 226 2878</p>
-<p class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">mail</span> ventas@vidadigital.cl</p>
-</div>
-</div>
-</div>
-<div class="px-margin-desktop py-8 border-t border-outline-variant max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-label-sm font-label-sm text-on-surface-variant">
-<p>© 2024 Vida Digital. Todos los derechos reservados.</p>
-<div class="flex gap-stack-lg">
-<span class="cursor-pointer hover:text-primary transition-colors">LinkedIn</span>
-<span class="cursor-pointer hover:text-primary transition-colors">Instagram</span>
-<span class="cursor-pointer hover:text-primary transition-colors">Facebook</span>
-</div>
-</div>
-</footer>
+<div id="footer"></div>
+<script src="components.js"></script>
 <script>
         document.addEventListener('DOMContentLoaded', () => {
             const observer = new IntersectionObserver((entries) => {

@@ -128,20 +128,7 @@
     </style>
 </head>
 <body class="overflow-x-hidden">
-<!-- TopNavBar (Shared Component) -->
-<nav class="bg-surface border-b border-outline-variant docked full-width top-0 sticky z-50">
-<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-desktop w-full h-20">
-<div class="text-headline-sm font-headline-sm font-bold text-primary tracking-tight">Vida Digital</div>
-<div class="hidden md:flex items-center space-x-10">
-<a class="text-label-md font-label-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="index.html">Inicio</a>
-<a class="text-label-md font-label-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="nosotros.html">Nosotros</a>
-<a class="text-label-md font-label-md text-primary font-bold border-b-2 border-primary pb-1" href="catalogo.html">Catálogo</a>
-<a class="text-label-md font-label-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="marcas.html">Marcas Propias</a>
-<a class="text-label-md font-label-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="contacto.html">Contacto</a>
-</div>
-<a class="bg-primary text-white px-6 py-2 text-label-md font-label-md rounded active:scale-95 transition-transform duration-150" href="ingresar.html">Ingresar</a>
-</div>
-</nav>
+<div id="navbar" data-active="catalogo"></div>
 <main>
 <!-- Hero Section -->
 <section class="relative py-section-padding px-margin-desktop overflow-hidden bg-white">
@@ -154,10 +141,7 @@
                         Desde electrónica y tecnología hasta artículos de hogar y viaje — todo importado directamente.
                     </p>
 <div class="flex items-center gap-stack-md">
-<div class="flex items-center gap-2 bg-surface-container-low px-4 py-2 rounded-full border border-outline-variant">
-<span class="text-accent-red font-bold">4.9/5</span>
-<span class="text-label-md font-label-md text-on-surface">Google Rating</span>
-</div>
+<!-- WIDGET GOOGLE REVIEWS -->
 </div>
 </div>
 <div class="relative hidden lg:block">
@@ -251,43 +235,8 @@
 </div>
 </section>
 </main>
-<!-- Footer (Shared Component) -->
-<footer class="bg-surface-container-low border-t border-outline-variant full-width bottom">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter max-w-container-max mx-auto px-margin-desktop py-12 w-full">
-<div class="col-span-1">
-<div class="text-headline-md font-headline-md text-primary mb-stack-md">Vida Digital</div>
-<p class="text-body-md font-body-md text-secondary">Líderes en importación mayorista con más de 25 años de experiencia en el mercado sudamericano.</p>
-</div>
-<div>
-<h4 class="text-label-md font-label-md text-on-surface-variant mb-stack-md uppercase tracking-widest">Navegación</h4>
-<ul class="space-y-2">
-<li><a class="text-body-md font-body-md text-on-surface-variant hover:text-primary underline transition-all" href="index.html">Inicio</a></li>
-<li><a class="text-body-md font-body-md text-on-surface-variant hover:text-primary underline transition-all" href="nosotros.html">Nosotros</a></li>
-<li><a class="text-body-md font-body-md text-primary font-semibold" href="catalogo.html">Catálogo</a></li>
-<li><a class="text-body-md font-body-md text-on-surface-variant hover:text-primary underline transition-all" href="marcas.html">Marcas Propias</a></li>
-</ul>
-</div>
-<div>
-<h4 class="text-label-md font-label-md text-on-surface-variant mb-stack-md uppercase tracking-widest">Contacto</h4>
-<ul class="space-y-2">
-<li class="text-body-md font-body-md text-on-surface-variant">Iquique, Chile</li>
-<li class="text-body-md font-body-md text-on-surface-variant">(57) 226 2878</li>
-<li><a class="text-body-md font-body-md text-on-surface-variant hover:text-primary underline transition-all" href="contacto.html">Formulario de contacto</a></li>
-</ul>
-</div>
-<div>
-<h4 class="text-label-md font-label-md text-on-surface-variant mb-stack-md uppercase tracking-widest">Confianza</h4>
-<div class="flex items-center gap-2 mb-stack-sm">
-<span class="material-symbols-outlined text-yellow-500" data-icon="star" data-weight="fill">star</span>
-<span class="text-body-md font-body-md text-on-surface">Google Rating 4.9/5</span>
-</div>
-<p class="text-label-sm font-label-sm text-secondary italic">"Garantía de stock y logística eficiente para el cono sur."</p>
-</div>
-</div>
-<div class="max-w-container-max mx-auto px-margin-desktop py-stack-md border-t border-outline-variant text-center md:text-left">
-<p class="text-label-sm font-label-sm text-secondary">© 2024 Vida Digital. Todos los derechos reservados. ZOFRI, Manzana 12, Galpón 24, Iquique. Phone: (57) 226 2878</p>
-</div>
-</footer>
+<div id="footer"></div>
+<script src="components.js"></script>
 <script>
         // Micro-interactions for cards
         document.querySelectorAll('.group').forEach(card => {
