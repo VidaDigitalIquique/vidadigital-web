@@ -219,6 +219,9 @@
   allowfullscreen>
 </iframe>
 </div>
+<div style="text-align:center; margin-top:0.5rem;">
+<button id="btn-audio-contacto" onclick="toggleAudioContacto(this)" style="background:transparent; border:1px solid #dc2626; color:#dc2626; border-radius:20px; padding:4px 14px; font-size:0.8rem; cursor:pointer; transition:transform 0.2s ease;">🔇 Activar audio</button>
+</div>
 </section>
 <div id="footer"></div>
 <script src="components.js"></script>
@@ -283,4 +286,17 @@
             });
         });
     </script>
+<script>
+function toggleAudioContacto(btn) {
+  var iframe = btn.closest('section').querySelector('iframe');
+  var isSilenced = btn.textContent.indexOf('Activar') !== -1;
+  if (isSilenced) {
+    iframe.src = iframe.src.replace('mute=1', 'mute=0');
+    btn.textContent = '🔊 Silenciar';
+  } else {
+    iframe.src = iframe.src.replace('mute=0', 'mute=1');
+    btn.textContent = '🔇 Activar audio';
+  }
+}
+</script>
 </body></html>
