@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "tertiary-container": "#0078b2",
+                "inverse-primary": "#ffb4ab",
+                "on-tertiary-fixed-variant": "#004b71",
+                "secondary-fixed-dim": "#bec6e0",
+                "primary-fixed": "#ffdad6",
+                "on-tertiary": "#ffffff",
+                "error-container": "#ffdad6",
+                "primary": "#dc2626",
+                "inverse-surface": "#3f2c29",
+                "tertiary-fixed-dim": "#90cdff",
+                "on-surface": "#0f172a",
+                "on-secondary-fixed": "#131b2e",
+                "primary-container": "#dc2626",
+                "on-secondary": "#ffffff",
+                "on-primary-fixed": "#410002",
+                "inverse-on-surface": "#ffedea",
+                "secondary-fixed": "#dae2fd",
+                "surface-container-high": "#ffe2de",
+                "on-tertiary-fixed": "#001e30",
+                "on-error": "#ffffff",
+                "surface-dim": "#f3d3cf",
+                "secondary-container": "#dae2fd",
+                "surface-container-lowest": "#ffffff",
+                "surface": "#ffffff",
+                "on-primary-container": "#fff6f5",
+                "outline": "#916f6b",
+                "surface-tint": "#bf0715",
+                "surface-container": "#ffe9e6",
+                "on-background": "#0f172a",
+                "surface-container-highest": "#fbdbd7",
+                "on-tertiary-container": "#f3f8ff",
+                "error": "#ba1a1a",
+                "on-primary": "#ffffff",
+                "surface-container-low": "#f1f5f9",
+                "outline-variant": "#e6bdb8",
+                "secondary": "#565e74",
+                "primary-fixed-dim": "#ffb4ab",
+                "on-primary-fixed-variant": "#93000b",
+                "surface-variant": "#fbdbd7",
+                "on-secondary-container": "#5c647a",
+                "surface-bright": "#fff8f7",
+                "background": "#ffffff",
+                "on-surface-variant": "#5c403c",
+                "tertiary": "#005e8d",
+                "on-secondary-fixed-variant": "#3f465c",
+                "tertiary-fixed": "#cbe6ff",
+                "on-error-container": "#93000a",
+                "accent-red": "#dc2626"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.125rem",
+                "lg": "0.25rem",
+                "xl": "0.5rem",
+                "full": "0.75rem"
+            },
+            "spacing": {
+                "unit": "8px",
+                "margin-mobile": "20px",
+                "container-max": "1280px",
+                "gutter": "24px",
+                "margin-desktop": "48px",
+                "stack-sm": "8px",
+                "stack-md": "16px",
+                "stack-lg": "32px",
+                "section-padding": "80px"
+            },
+            "fontFamily": {
+                "headline-md": ["Inter"],
+                "body-md": ["Inter"],
+                "label-sm": ["Inter"],
+                "headline-lg": ["Inter"],
+                "title-lg": ["Inter"],
+                "display-lg": ["Inter"],
+                "body-lg": ["Inter"],
+                "label-md": ["Inter"],
+                "headline-lg-mobile": ["Inter"],
+                "display-lg-mobile": ["Inter"],
+                "headline-sm": ["Inter"],
+                "caption": ["Inter"]
+            },
+            "fontSize": {
+                "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                "title-lg": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "700"}],
+                "headline-sm": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                "display-lg-mobile": ["36px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                "caption": ["12px", {"lineHeight": "1.4", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #ffffff;
+            color: #0f172a;
+            font-family: 'Inter', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+<!-- TopNavBar (Shared Component) -->
+<nav class="bg-surface border-b border-outline-variant docked full-width top-0 sticky z-50">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-desktop w-full h-20">
+<div class="text-headline-sm font-headline-sm font-bold text-primary tracking-tight">Vida Digital</div>
+<div class="hidden md:flex items-center space-x-10">
+<a class="text-label-md font-label-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="index.html">Inicio</a>
+<a class="text-label-md font-label-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="nosotros.html">Nosotros</a>
+<a class="text-label-md font-label-md text-primary font-bold border-b-2 border-primary pb-1" href="catalogo.html">Catálogo</a>
+<a class="text-label-md font-label-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="marcas.html">Marcas Propias</a>
+<a class="text-label-md font-label-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="contacto.html">Contacto</a>
+</div>
+<a class="bg-primary text-white px-6 py-2 text-label-md font-label-md rounded active:scale-95 transition-transform duration-150" href="login.html">Ingresar</a>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative py-section-padding px-margin-desktop overflow-hidden bg-white">
+<div class="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-gutter items-center">
+<div class="relative z-10">
+<h1 class="text-display-lg-mobile md:text-display-lg font-display-lg mb-stack-md text-on-surface">
+                        Un catálogo diseñado para el mayorista que quiere <span class="text-accent-red">variedad y margen</span>.
+                    </h1>
+<p class="text-body-lg font-body-lg text-secondary mb-stack-lg max-w-xl">
+                        Nuestra selección de productos está optimizada para maximizar la rentabilidad de su negocio. Ofrecemos soluciones integrales en importación y logística para que su inventario nunca se detenga.
+                    </p>
+<div class="flex items-center gap-stack-md">
+<div class="flex items-center gap-2 bg-surface-container-low px-4 py-2 rounded-full border border-outline-variant">
+<span class="text-accent-red font-bold">4.9/5</span>
+<span class="text-label-md font-label-md text-on-surface">Google Rating</span>
+</div>
+</div>
+</div>
+<div class="relative hidden lg:block">
+<div class="aspect-square rounded-xl overflow-hidden border border-outline-variant shadow-lg">
+<img alt="Wholesale warehouse logistics" class="w-full h-full object-cover" data-alt="A professional, high-density wholesale warehouse environment with organized shelving systems and modern logistics equipment. The scene is illuminated by cool, cinematic blue lighting with sharp red laser-like accents highlighting efficiency. The atmosphere is industrious, clean, and highly organized, conveying a sense of reliable large-scale distribution in a dark mode corporate aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCigTZzqgyIWd6q2JG0I3SjsjZsUDi4_HKKtZKbyBFcHfXZ6KBN11j5urgd6Gvl_Wa0P_a4EQXQri4zQ8NNjIKmDTBP6wbzEQRkL8673gaVQh9e2ytSXHClbaIoiiilpdE7CHK-bSAjNjWkVYqqeCFTesUTtFKWvMZVidwRQhNq2Wl1HOI655nVT1-i6Ro9u8RAc5TlZxB-epzT7MncWL_hHDUpNJqgHOJHZDPYLqNeVypQbTH2dRo3umHm3MM72f5r5f1XFoH3_idU"/>
+</div>
+<div class="absolute -bottom-6 -left-6 glass-card p-stack-md rounded-lg max-w-xs">
+<p class="text-label-md font-label-md text-accent-red mb-1">DISPONIBILIDAD INMEDIATA</p>
+<p class="text-body-md font-body-md text-on-surface">Más de 5,000 SKUs listos para despacho desde ZOFRI Iquique.</p>
+</div>
+</div>
+</div>
+<!-- Background Decorative Element -->
+<div class="absolute top-0 right-0 -z-10 opacity-5 blur-3xl">
+<div class="w-96 h-96 bg-accent-red rounded-full"></div>
+</div>
+</section>
+<!-- Product Categories Bento Grid -->
+<section class="py-section-padding px-margin-desktop bg-surface-container-low">
+<div class="max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-stack-lg gap-stack-md">
+<div>
+<h2 class="text-headline-md font-headline-md text-on-surface mb-stack-sm">Categorías Estratégicas</h2>
+<p class="text-body-md font-body-md text-secondary">Productos seleccionados por su alta rotación en mercados regionales.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Tecnología y Electrónica -->
+<div class="md:col-span-8 bg-white border border-outline-variant p-stack-lg rounded-lg hover:border-accent-red transition-all duration-300 group relative overflow-hidden h-[400px] shadow-sm">
+<div class="relative z-10 h-full flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-accent-red text-4xl mb-stack-sm" data-icon="devices">devices</span>
+<h3 class="text-headline-sm font-headline-sm text-on-surface mb-stack-sm">Tecnología y Electrónica</h3>
+<p class="text-body-md font-body-md text-secondary max-w-md">Últimas tendencias en gadgets, componentes y hardware de alto rendimiento.</p>
+</div>
+</div>
+<img alt="Technology Hardware" class="absolute inset-0 w-full h-full object-cover opacity-5 group-hover:opacity-10 transition-opacity duration-500" data-alt="A macro shot of sophisticated modern electronic components and sleek consumer technology gadgets. The lighting is low-key with intense red glowing highlights reflecting off metallic surfaces. The composition is high-density and futuristic, emphasizing the cutting-edge nature of the products in a dark, professional corporate setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3k2wrYx_UeAsMlBB7TQsVdWP1q8WkOiBi5VI1LCORXktqw-g34deHUx3jUUQiRlBJrVsD7hNkMaiSckrogK_64lB9Vnv7O2A2orHan3HJT_0sXVtb4qYmS_EpBWNk7bn2qjdpWWUFokUmA84LeiovKr-yKhlIByERimIACPDqYATk-NpyV3XkmPARQy_MDRFVx20ix0suBisX8liVwKJhXrFJkbDv0gfBOhD4WcfXuo6xw89kyRmw2F1vD-GsXS2KxwLhj1xFmmfE"/>
+</div>
+<!-- Electrodomésticos y Hogar -->
+<div class="md:col-span-4 bg-white border border-outline-variant p-stack-lg rounded-lg hover:border-accent-red transition-all duration-300 group flex flex-col justify-between shadow-sm">
+<div>
+<span class="material-symbols-outlined text-accent-red text-4xl mb-stack-sm" data-icon="home_appliance">home_iot_device</span>
+<h3 class="text-headline-sm font-headline-sm text-on-surface mb-stack-sm">Electrodomésticos y Hogar</h3>
+<p class="text-body-md font-body-md text-secondary">Eficiencia y diseño para el hogar moderno con márgenes competitivos.</p>
+</div>
+<div class="mt-stack-lg">
+<img alt="Home Appliances" class="rounded border border-outline-variant opacity-80 group-hover:opacity-100 transition-opacity" data-alt="A sleek arrangement of high-end, minimalist kitchen and home appliances in a dark, contemporary interior. The lighting is soft and focused, creating elegant shadows on deep slate surfaces. Subtle red LED accents from the appliances punctuate the scene, reinforcing a sense of premium quality and modern living." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCt-JL4nen_OF7RDZIrfS52DKJ32ejPGsUkPqzH0naMsBh2OJKzEoyqDpxQhSz20zJlyN4xkJLYoJWkaCr1AE8ZhXZEglle5p4OkuEHBuyXZ70ORur1hscrquv4T4RoQU1bMcZT6DpwIDuz74ZK7O7Flq6VypBoIElt4pfAOc4n8nWXzEkFBATAdhfccttdN8E8T2WMcRW-zZVz0iuPrmNnG0DU3jLNCWExQBDpKRbYTFTJa2Gc4GKA9jvCD58gC5cmS-6AHvDvQy4I"/>
+</div>
+</div>
+<!-- Audio y Entretenimiento -->
+<div class="md:col-span-4 bg-white border border-outline-variant p-stack-lg rounded-lg hover:border-accent-red transition-all duration-300 group shadow-sm">
+<span class="material-symbols-outlined text-accent-red text-4xl mb-stack-sm" data-icon="speaker">speaker</span>
+<h3 class="text-headline-sm font-headline-sm text-on-surface mb-stack-sm">Audio y Entretenimiento</h3>
+<p class="text-body-md font-body-md text-secondary mb-stack-md">Sistemas de sonido premium y periféricos para el ocio digital.</p>
+<div class="h-40 rounded bg-surface-container-low border border-outline-variant overflow-hidden">
+<img alt="Audio Equipment" class="w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-700" data-alt="High-fidelity audio equipment, including studio-grade speakers and sleek headphones, arranged in a professional sound studio environment. The atmosphere is moody and sophisticated, with deep shadows and vibrant red lighting hitting the acoustic textures. The visual style is premium and authoritative, highlighting technical excellence." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnyxwE4o6C8TGVaP0qSHsNtA_WpbbY2LjS0FOpo8wRmDGm1BD5r9WziJ6sc35DVJwh8S64FZclX9Amt_VBCab_yAQkR2Ux99EfpWZNXUwvzEfvudKTnk9BiYsGW8bt9bsoYQmPhwuWxzokMPENHXga6uYmQSQ3Z6Du9t2APUHmOPgYij__iJLQemipf5GGupVvPrBL_t0iRzazWIIH25Gjor-3D-Uf4PyuuCMtmDaWVx6PPVP8ibcOur82xjPpZqNmppecf24zImsT"/>
+</div>
+</div>
+<!-- Maletas y Artículos de Viaje -->
+<div class="md:col-span-4 bg-white border border-outline-variant p-stack-lg rounded-lg hover:border-accent-red transition-all duration-300 group shadow-sm">
+<span class="material-symbols-outlined text-accent-red text-4xl mb-stack-sm" data-icon="luggage">luggage</span>
+<h3 class="text-headline-sm font-headline-sm text-on-surface mb-stack-sm">Maletas y Artículos de Viaje</h3>
+<p class="text-body-md font-body-md text-secondary mb-stack-md">Durabilidad y estilo para el viajero frecuente de negocios.</p>
+<div class="h-40 rounded bg-surface-container-low border border-outline-variant overflow-hidden">
+<img alt="Travel Gear" class="w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-700" data-alt="Premium hard-shell travel luggage and high-quality suitcases presented in a minimalist, airport-terminal-inspired setting. The lighting is clean and directional, with sharp contrasts against a dark slate background. Subtle crimson details on the luggage stand out, conveying durability and resilient commercial quality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKExR4XyNQGHbknBItMilbCPirp4JmimtUo5IeWLLPN96N5Y7brmy-Ym0Fw5ke8Z8BuQ3NXscmZ9bQulVoDB4Uv8c3dtZFUPEm9ybEMThoNmQ9BUJTWAGfLDMEM1TQKvG0BXSXL7oGqqsG2GpZ9QjOwre_GSmahja8mqCRc8w1qcRn4Ex2SWsbQjyIjAwmiAY2jy1F995SHXHsVIzE33dyUIOsRCGSgW30Q3DoqzwQDcZDI54-FGfQ1zbwgD4GJF3tUaaqzBTPCU65"/>
+</div>
+</div>
+<!-- Accesorios y Varios -->
+<div class="md:col-span-4 bg-white border border-outline-variant p-stack-lg rounded-lg hover:border-accent-red transition-all duration-300 group shadow-sm">
+<span class="material-symbols-outlined text-accent-red text-4xl mb-stack-sm" data-icon="shopping_bag">shopping_bag</span>
+<h3 class="text-headline-sm font-headline-sm text-on-surface mb-stack-sm">Accesorios y Varios</h3>
+<p class="text-body-md font-body-md text-secondary mb-stack-md">Complementos esenciales que impulsan la venta cruzada.</p>
+<div class="h-40 rounded bg-surface-container-low border border-outline-variant overflow-hidden">
+<img alt="Misc Accessories" class="w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-700" data-alt="A curated grid of various high-end lifestyle and tech accessories. The layout is clean and rhythmic, with each item perfectly centered. The lighting uses a professional dark-mode palette of slate and deep charcoal, with intense red focal points on select product details, suggesting high-value and versatile inventory." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoXRi2O3-ihmbUwtM90h1VvFiOPObhk5hCGaT6Snm0ZAWFUklGsRPfMg0-c0jLV6wNFwybVT2VcPcRErfmYVLBAi5sOgvT-CMIM1vQDzzia-9juhCLogAYgRL-7wQg-NvNKnU7QmK2-6MPflClEu-kNsVRNm6BtNY7bhmsvDEFCk1UpECly8Ehjeg4CHYWozEL68IK7Y5zycsbs4LvysW9GAI5DBM4Lz0sUDggSTzwZFwaNcY1KO7qzH63f9M5ZLYruisekuXX_0Y5"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Strip -->
+<section class="py-stack-lg border-y border-outline-variant bg-white">
+<div class="max-w-container-max mx-auto px-margin-desktop flex flex-col md:flex-row items-center justify-between gap-stack-md text-center md:text-left">
+<div>
+<h4 class="text-headline-sm font-headline-sm text-on-surface">¿Busca el listado completo de precios mayoristas?</h4>
+<p class="text-body-md font-body-md text-secondary">Actualizado mensualmente con las últimas novedades de ZOFRI.</p>
+</div>
+<a class="bg-accent-red text-white px-8 py-4 text-label-md font-label-md rounded flex items-center gap-2 hover:bg-red-700 transition-all transform hover:scale-105 active:scale-95" href="contacto.html">
+                    Solicitar catálogo actualizado
+                    <span class="material-symbols-outlined text-base" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</section>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="bg-surface-container-low border-t border-outline-variant full-width bottom">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter max-w-container-max mx-auto px-margin-desktop py-12 w-full">
+<div class="col-span-1">
+<div class="text-headline-md font-headline-md text-primary mb-stack-md">Vida Digital</div>
+<p class="text-body-md font-body-md text-secondary">Líderes en importación mayorista con más de 25 años de experiencia en el mercado sudamericano.</p>
+</div>
+<div>
+<h4 class="text-label-md font-label-md text-on-surface-variant mb-stack-md uppercase tracking-widest">Navegación</h4>
+<ul class="space-y-2">
+<li><a class="text-body-md font-body-md text-on-surface-variant hover:text-primary underline transition-all" href="index.html">Inicio</a></li>
+<li><a class="text-body-md font-body-md text-on-surface-variant hover:text-primary underline transition-all" href="nosotros.html">Nosotros</a></li>
+<li><a class="text-body-md font-body-md text-primary font-semibold" href="catalogo.html">Catálogo</a></li>
+<li><a class="text-body-md font-body-md text-on-surface-variant hover:text-primary underline transition-all" href="marcas.html">Marcas Propias</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-label-md font-label-md text-on-surface-variant mb-stack-md uppercase tracking-widest">Contacto</h4>
+<ul class="space-y-2">
+<li class="text-body-md font-body-md text-on-surface-variant">Iquique, Chile</li>
+<li class="text-body-md font-body-md text-on-surface-variant">(57) 226 2878</li>
+<li><a class="text-body-md font-body-md text-on-surface-variant hover:text-primary underline transition-all" href="contacto.html">Formulario de contacto</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-label-md font-label-md text-on-surface-variant mb-stack-md uppercase tracking-widest">Confianza</h4>
+<div class="flex items-center gap-2 mb-stack-sm">
+<span class="material-symbols-outlined text-yellow-500" data-icon="star" data-weight="fill">star</span>
+<span class="text-body-md font-body-md text-on-surface">Google Rating 4.9/5</span>
+</div>
+<p class="text-label-sm font-label-sm text-secondary italic">"Garantía de stock y logística eficiente para el cono sur."</p>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-desktop py-stack-md border-t border-outline-variant text-center md:text-left">
+<p class="text-label-sm font-label-sm text-secondary">© 2024 Vida Digital. Todos los derechos reservados. ZOFRI, Manzana 12, Galpón 24, Iquique. Phone: (57) 226 2878</p>
+</div>
+</footer>
+<script>
+        // Micro-interactions for cards
+        document.querySelectorAll('.group').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                // Subtle scale effect handled by tailwind classes
+            });
+        });
+    </script>
+</body></html>
