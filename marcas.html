@@ -159,31 +159,46 @@
 <!-- Mini videos -->
 <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-top:1.5rem; width:100%;">
 <div>
-<video autoplay muted loop playsinline style="width:100%; aspect-ratio:9/16; border-radius:12px; object-fit:cover;">
+<video id="video-vd19" autoplay muted loop playsinline style="width:100%; aspect-ratio:9/16; border-radius:12px; object-fit:cover;">
 <source src="https://res.cloudinary.com/dxkidwxjl/video/upload/v1779820995/VD-19_fp0bi9.mp4" type="video/mp4">
 </video>
 <p style="font-weight:600; font-size:0.8rem; margin-top:0.35rem;">VD-0019 — Freidora de Aire 10L</p>
 <p style="color:#dc2626; font-style:italic; font-size:0.75rem;">"Cocina sin aceite. Vive sin culpa."</p>
+<button class="btn-audio" data-video="video-vd19" onclick="toggleAudio(this)">🔇 Activar audio</button>
 </div>
 <div>
-<video autoplay muted loop playsinline style="width:100%; aspect-ratio:9/16; border-radius:12px; object-fit:cover;">
+<video id="video-vd20" autoplay muted loop playsinline style="width:100%; aspect-ratio:9/16; border-radius:12px; object-fit:cover;">
 <source src="https://res.cloudinary.com/dxkidwxjl/video/upload/v1779820996/VD-20_e1mvg7.mp4" type="video/mp4">
 </video>
 <p style="font-weight:600; font-size:0.8rem; margin-top:0.35rem;">VD-20 — Freidora de Aire 6L</p>
 <p style="color:#dc2626; font-style:italic; font-size:0.75rem;">"Freír más rápido, comer más saludable."</p>
+<button class="btn-audio" data-video="video-vd20" onclick="toggleAudio(this)">🔇 Activar audio</button>
 </div>
 </div>
 </div>
 <!-- COLUMNA DERECHA: VD-007 -->
 <div style="justify-self:center; text-align:center; max-width:320px;">
-<video autoplay muted loop playsinline style="width:100%; max-width:320px; aspect-ratio:9/16; border-radius:16px; object-fit:cover;">
+<video id="video-vd007" autoplay muted loop playsinline style="width:100%; max-width:320px; aspect-ratio:9/16; border-radius:16px; object-fit:cover;">
 <source src="https://res.cloudinary.com/dxkidwxjl/video/upload/v1779820995/VD-007_pvd7s5.mp4" type="video/mp4">
 </video>
 <p style="font-weight:600; margin-top:0.5rem;">VD-0007 — Olla Multiusos</p>
 <p style="color:#dc2626; font-style:italic; font-size:0.9rem;">"Cocina inteligente, resultados perfectos."</p>
+<button class="btn-audio" data-video="video-vd007" onclick="toggleAudio(this)">🔇 Activar audio</button>
 </div>
 </div>
 <style>
+.btn-audio {
+  background: transparent;
+  border: 1px solid #dc2626;
+  color: #dc2626;
+  border-radius: 20px;
+  padding: 4px 14px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  margin-top: 6px;
+  transition: transform 0.2s ease;
+}
+.btn-audio:hover { transform: scale(1.03); }
 @media (max-width:767px) {
 .vida-digital-layout { grid-template-columns:1fr !important; }
 .vida-digital-layout > div:last-child { order:-1; }
@@ -274,4 +289,24 @@
             });
         });
     </script>
+<script>
+function toggleAudio(btn) {
+  const allVideos = ['video-vd007', 'video-vd19', 'video-vd20'];
+  const targetId = btn.dataset.video;
+  const targetVideo = document.getElementById(targetId);
+  const isCurrentlyMuted = targetVideo.muted;
+
+  allVideos.forEach(id => {
+    const v = document.getElementById(id);
+    if (v) v.muted = true;
+    const b = document.querySelector('[data-video="' + id + '"]');
+    if (b) b.textContent = '🔇 Activar audio';
+  });
+
+  if (isCurrentlyMuted) {
+    targetVideo.muted = false;
+    btn.textContent = '🔊 Silenciar';
+  }
+}
+</script>
 </body></html>
