@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nosotros | Vida Digital</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "tertiary-container": "#0078b2",
+                "inverse-primary": "#ffb4ab",
+                "on-tertiary-fixed-variant": "#004b71",
+                "secondary-fixed-dim": "#bec6e0",
+                "primary-fixed": "#ffdad6",
+                "on-tertiary": "#ffffff",
+                "error-container": "#ffdad6",
+                "primary": "#b70011",
+                "inverse-surface": "#3f2c29",
+                "tertiary-fixed-dim": "#90cdff",
+                "on-surface": "#0f172a",
+                "on-secondary-fixed": "#131b2e",
+                "primary-container": "#dc2626",
+                "on-secondary": "#ffffff",
+                "on-primary-fixed": "#410002",
+                "inverse-on-surface": "#ffedea",
+                "secondary-fixed": "#dae2fd",
+                "surface-container-high": "#ffe2de",
+                "on-tertiary-fixed": "#001e30",
+                "on-error": "#ffffff",
+                "surface-dim": "#f3d3cf",
+                "secondary-container": "#dae2fd",
+                "surface-container-lowest": "#ffffff",
+                "surface": "#ffffff",
+                "on-primary-container": "#fff6f5",
+                "outline": "#916f6b",
+                "surface-tint": "#bf0715",
+                "surface-container": "#ffe9e6",
+                "on-background": "#0f172a",
+                "surface-container-highest": "#fbdbd7",
+                "on-tertiary-container": "#f3f8ff",
+                "error": "#ba1a1a",
+                "on-primary": "#ffffff",
+                "surface-container-low": "#fff0ee",
+                "outline-variant": "#e6bdb8",
+                "secondary": "#565e74",
+                "primary-fixed-dim": "#ffb4ab",
+                "on-primary-fixed-variant": "#93000b",
+                "surface-variant": "#fbdbd7",
+                "on-secondary-container": "#5c647a",
+                "surface-bright": "#fff8f7",
+                "background": "#ffffff",
+                "on-surface-variant": "#5c403c",
+                "tertiary": "#005e8d",
+                "on-secondary-fixed-variant": "#3f465c",
+                "tertiary-fixed": "#cbe6ff",
+                "on-error-container": "#93000a",
+                "accent-red": "#dc2626"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.125rem",
+                "lg": "0.25rem",
+                "xl": "0.5rem",
+                "full": "0.75rem"
+            },
+            "spacing": {
+                "unit": "8px",
+                "margin-mobile": "16px",
+                "container-max": "1280px",
+                "gutter": "24px",
+                "margin-desktop": "40px",
+                "section-padding": "80px"
+            },
+            "fontFamily": {
+                "headline-md": ["Inter"],
+                "body-md": ["Inter"],
+                "label-sm": ["Inter"],
+                "headline-lg": ["Inter"],
+                "title-lg": ["Inter"],
+                "display-lg": ["Inter"],
+                "body-lg": ["Inter"],
+                "label-md": ["Inter"],
+                "headline-lg-mobile": ["Inter"]
+            },
+            "fontSize": {
+                "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                "title-lg": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #ffffff;
+            color: #0f172a;
+            font-family: 'Inter', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .tonal-card {
+            background-color: #fff8f7;
+            border: 1px solid #e6bdb8;
+            transition: all 0.3s ease;
+        }
+        .tonal-card:hover {
+            border-color: #dc2626;
+            box-shadow: 0 4px 12px rgba(220, 38, 38, 0.08);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface overflow-x-hidden">
+<!-- Top Navigation Bar (Shared Component) -->
+<nav class="bg-surface sticky top-0 z-50 border-b border-outline-variant docked full-width">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-desktop w-full h-20">
+<div class="text-title-lg font-headline-lg font-bold text-primary">Vida Digital</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-200 font-label-md text-label-md" href="index.html">Inicio</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1 font-label-md text-label-md" href="nosotros.html">Nosotros</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-200 font-label-md text-label-md" href="#">Catálogo</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-200 font-label-md text-label-md" href="#">Marcas Propias</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-200 font-label-md text-label-md" href="#">Contacto</a>
+</div>
+<button class="bg-accent-red text-white px-6 py-2 rounded-lg font-bold text-label-md hover:brightness-110 active:scale-95 transition-all">
+                Ingresar
+            </button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<header class="relative py-24 bg-surface-container-low overflow-hidden">
+<div class="absolute inset-0 opacity-10">
+<div class="absolute inset-0 bg-gradient-to-r from-surface-container-low to-transparent z-10"></div>
+<img alt="Logistics background" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_rnoFzbhdAI3SEIW06--nroUAD0jqxsZXqiy31ySedokiZO6Cs3hzqyNRImUkECuXg99RwDcRN8WAmUW9qiur-6A60IGmN2ir8ebg8OZTAENiEXpqSUSJ7WkcuRP9s1qihSiNwQ2SHkugGMAOfUuILSOQS_OFTjpQShqmiidpBhSnOdGdB4aisvm-rbjqHTej-AK5FAI37jav-w0S3BGI86cEGj44KSBkl4ZpG6Jq1eAvvlUuFcxts6CbUp0c3MqTi6_EEECZOvjU"/>
+</div>
+<div class="relative z-20 max-w-container-max mx-auto px-margin-desktop">
+<div class="max-w-3xl">
+<span class="text-accent-red font-bold tracking-widest text-label-md mb-4 block">EXCELENCIA COMERCIAL</span>
+<h1 class="text-display-lg font-display-lg text-on-surface mb-6">Nosotros</h1>
+<p class="text-body-lg text-on-surface-variant leading-relaxed">
+                        Más de 25 años liderando el comercio mayorista en el cono sur, transformando la logística fronteriza en soluciones eficientes para el mercado global.
+                    </p>
+</div>
+</div>
+</header>
+<!-- Stats Section -->
+<section class="py-12 bg-background relative -mt-10 z-30">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Stat Card 1 -->
+<div class="tonal-card p-8 rounded-xl flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-accent-red text-5xl mb-4" style="font-variation-settings: 'FILL' 1;">history</span>
+<div class="text-4xl font-extrabold text-on-surface mb-2">25+</div>
+<div class="text-label-md text-on-surface-variant">Años de Trayectoria</div>
+</div>
+<!-- Stat Card 2 -->
+<div class="tonal-card p-8 rounded-xl flex flex-col items-center text-center border-accent-red">
+<span class="material-symbols-outlined text-accent-red text-5xl mb-4" style="font-variation-settings: 'FILL' 1;">star</span>
+<div class="text-4xl font-extrabold text-on-surface mb-2">4.9/5</div>
+<div class="text-label-md text-on-surface-variant">Google Rating</div>
+</div>
+<!-- Stat Card 3 -->
+<div class="tonal-card p-8 rounded-xl flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-accent-red text-5xl mb-4" style="font-variation-settings: 'FILL' 1;">location_on</span>
+<div class="text-4xl font-extrabold text-on-surface mb-2">2</div>
+<div class="text-label-md text-on-surface-variant">Centros de Distribución</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Historia y Trayectoria -->
+<section class="py-section-padding">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="flex flex-col md:flex-row gap-16 items-center">
+<div class="flex-1 space-y-6">
+<h2 class="text-headline-md font-headline-md text-on-surface border-l-4 border-accent-red pl-6">Historia y trayectoria</h2>
+<div class="text-body-md text-on-surface-variant space-y-4">
+<p>Vida Digital nació de la visión de conectar mercados distantes a través de una cadena de suministro robusta y resiliente. Con un cuarto de siglo operando desde el corazón de Iquique, hemos superado las fluctuaciones del mercado global para establecernos como el socio estratégico preferido de mayoristas y minoristas en toda la región.</p>
+<p>Nuestra evolución ha sido constante, integrando tecnologías de vanguardia en la gestión de inventarios y logística cross-border, permitiendo que nuestros clientes operen con la certeza comercial que solo la experiencia puede brindar.</p>
+</div>
+</div>
+<div class="flex-1 w-full">
+<div class="rounded-xl overflow-hidden shadow-xl border border-outline-variant">
+<img alt="Professional office" class="w-full h-80 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJ9KJoH5K0kxVJlULRNbBoikyVOgXuvobjCpt7kjLMidmwE-v2uu70KdtdXy-sHFsZJXxxslV4Xv_gGX2axtWjgu-J1XFNhTn9-hPwaWyybF6t6cdlmSdgHF-quPYO_nIzgrWEV1rExk3DQj7G3dFIJpnxbR_DcMntdf7PigITYFEyMtP43m2Kfy7qNarta6PtW5EO19pPZJcLYDJADgCdAGFaR0UD-VrIXke6AkfjbwbiKd6FV2K2tciu9a2bVaG4J3CVEfP_AciH"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Ventaja ZOFRI -->
+<section class="py-section-padding bg-surface-container-lowest border-y border-outline-variant">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+<div>
+<h2 class="text-headline-md font-headline-md text-on-surface mb-8">Ventaja ZOFRI</h2>
+<div class="prose prose-slate max-w-none text-on-surface-variant space-y-6">
+<p class="text-body-lg">Nuestra ubicación estratégica en la Zona Franca de Iquique (ZOFRI) representa un pilar fundamental de nuestra competitividad. Esta plataforma logística nos permite ofrecer beneficios tributarios y aduaneros directos a nuestros socios comerciales.</p>
+<ul class="space-y-4">
+<li class="flex items-start">
+<span class="material-symbols-outlined text-accent-red mr-3">check_circle</span>
+<span>Exención de impuestos para transacciones de exportación, optimizando el margen operativo de nuestros clientes.</span>
+</li>
+<li class="flex items-start">
+<span class="material-symbols-outlined text-accent-red mr-3">check_circle</span>
+<span>Infraestructura portuaria de primer nivel, garantizando tiempos de respuesta mínimos en el arribo de mercancía global.</span>
+</li>
+<li class="flex items-start">
+<span class="material-symbols-outlined text-accent-red mr-3">check_circle</span>
+<span>Conectividad directa con los corredores bioceánicos, facilitando la distribución eficiente hacia Bolivia, Paraguay y Argentina.</span>
+</li>
+<li class="flex items-start">
+<span class="material-symbols-outlined text-accent-red mr-3">check_circle</span>
+<span>Almacenamiento en instalaciones de alta seguridad (Galpón 24) bajo normativas internacionales de control.</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="relative h-full min-h-[400px]">
+<div class="absolute inset-0 bg-accent-red/5 rounded-xl overflow-hidden border border-outline-variant">
+<div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-accent-red/10 via-transparent to-transparent"></div>
+<div class="p-12 h-full flex flex-col justify-center">
+<div class="bg-surface p-8 rounded-lg border border-outline-variant shadow-lg">
+<div class="text-headline-sm text-on-surface mb-4">Ubicación Global</div>
+<p class="text-body-md text-on-surface-variant mb-6">Operando desde el puerto libre más importante del Pacífico Sur.</p>
+<div class="flex items-center space-x-4">
+<div class="flex-1 h-2 bg-surface-container-high rounded-full overflow-hidden">
+<div class="bg-accent-red h-full w-[85%]"></div>
+</div>
+<span class="text-label-md text-on-surface font-semibold">Eficiencia Logística</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Misión y Visión Section -->
+<section class="py-section-padding bg-background">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Mission -->
+<div class="tonal-card p-12 rounded-xl border-l-8 border-l-accent-red">
+<div class="flex items-center mb-6">
+<span class="material-symbols-outlined text-accent-red text-4xl mr-4" style="font-variation-settings: 'FILL' 1;">target</span>
+<h3 class="text-headline-sm text-on-surface">Misión</h3>
+</div>
+<p class="text-body-lg text-on-surface-variant leading-relaxed">
+                            Proveer a los mercados regionales con productos de alta tecnología y consumo masivo, garantizando la eficiencia operativa a través de una logística de excelencia en Zona Franca, y construyendo relaciones comerciales de largo plazo basadas en la confianza y la transparencia.
+                        </p>
+</div>
+<!-- Vision -->
+<div class="tonal-card p-12 rounded-xl border-l-8 border-l-secondary">
+<div class="flex items-center mb-6">
+<span class="material-symbols-outlined text-secondary text-4xl mr-4" style="font-variation-settings: 'FILL' 1;">visibility</span>
+<h3 class="text-headline-sm text-on-surface">Visión</h3>
+</div>
+<p class="text-body-lg text-on-surface-variant leading-relaxed">
+                            Ser reconocidos como el hub logístico y comercial más resiliente del cono sur, liderando la transformación digital en el mercado mayorista y estableciendo estándares de calidad que definan el futuro del comercio internacional en Chile y sus países vecinos.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Bottom CTA -->
+<section class="py-12 bg-accent-red">
+<div class="max-w-container-max mx-auto px-margin-desktop flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="text-center md:text-left">
+<h2 class="text-headline-sm text-white mb-2">¿Listo para expandir su negocio?</h2>
+<p class="text-white/80">Contáctenos hoy y acceda a nuestro catálogo exclusivo para mayoristas.</p>
+</div>
+<button class="bg-white text-accent-red px-10 py-4 rounded-lg font-extrabold hover:bg-surface-container-lowest transition-colors shadow-lg">
+                    HABLAR CON UN ASESOR
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="bg-surface-container-low border-t border-outline-variant py-12">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter max-w-container-max mx-auto px-margin-desktop w-full">
+<div class="space-y-4">
+<div class="text-headline-md font-headline-md text-primary">Vida Digital</div>
+<p class="text-body-md text-on-surface-variant">Importadores mayoristas especializados en soluciones logísticas integrales desde ZOFRI Iquique.</p>
+</div>
+<div class="space-y-4">
+<h4 class="text-on-surface font-bold text-label-md uppercase tracking-widest">Navegación</h4>
+<ul class="space-y-2">
+<li><a class="text-on-surface-variant hover:text-primary underline transition-all text-body-md" href="index.html">Inicio</a></li>
+<li><a class="text-primary font-semibold text-body-md" href="nosotros.html">Nosotros</a></li>
+<li><a class="text-on-surface-variant hover:text-primary underline transition-all text-body-md" href="#">Catálogo</a></li>
+<li><a class="text-on-surface-variant hover:text-primary underline transition-all text-body-md" href="#">Marcas Propias</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="text-on-surface font-bold text-label-md uppercase tracking-widest">Contacto</h4>
+<ul class="space-y-2 text-on-surface-variant text-body-md">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-accent-red text-sm">call</span>
+                        (57) 226 2878
+                    </li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-accent-red text-sm">location_on</span>
+                        ZOFRI, Manzana 12, Galpón 24, Iquique.
+                    </li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="text-on-surface font-bold text-label-md uppercase tracking-widest">Información</h4>
+<div class="p-6 bg-surface-container-highest/30 rounded-lg border border-dashed border-outline">
+<div class="text-accent-red font-bold mb-2">OPERADOR AUTORIZADO</div>
+<p class="text-label-sm text-on-surface-variant">Google Rating: 4.9/5 ★</p>
+</div>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-desktop mt-12 pt-8 border-t border-outline-variant text-center">
+<p class="text-label-sm text-on-surface-variant">© 2024 Vida Digital. Todos los derechos reservados. ZOFRI, Manzana 12, Galpón 24, Iquique. Phone: (57) 226 2878</p>
+</div>
+</footer>
+<script>
+        // Smooth reveal animation for sections
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+    </script>
+</body></html>

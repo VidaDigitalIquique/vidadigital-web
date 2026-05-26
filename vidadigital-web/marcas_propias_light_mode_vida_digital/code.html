@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nuestras Marcas | Vida Digital</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-container": "#0078b2",
+                    "inverse-primary": "#ffb4ab",
+                    "on-tertiary-fixed-variant": "#004b71",
+                    "secondary-fixed-dim": "#bec6e0",
+                    "primary-fixed": "#ffdad6",
+                    "on-tertiary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "primary": "#b70011",
+                    "inverse-surface": "#3f2c29",
+                    "tertiary-fixed-dim": "#90cdff",
+                    "on-surface": "#281715",
+                    "on-secondary-fixed": "#131b2e",
+                    "primary-container": "#dc2626",
+                    "on-secondary": "#ffffff",
+                    "on-primary-fixed": "#410002",
+                    "inverse-on-surface": "#ffedea",
+                    "secondary-fixed": "#dae2fd",
+                    "surface-container-high": "#ffe2de",
+                    "on-tertiary-fixed": "#001e30",
+                    "on-error": "#ffffff",
+                    "surface-dim": "#f3d3cf",
+                    "secondary-container": "#dae2fd",
+                    "surface-container-lowest": "#ffffff",
+                    "surface": "#fff8f7",
+                    "on-primary-container": "#fff6f5",
+                    "outline": "#916f6b",
+                    "surface-tint": "#bf0715",
+                    "surface-container": "#ffe9e6",
+                    "on-background": "#281715",
+                    "surface-container-highest": "#fbdbd7",
+                    "on-tertiary-container": "#f3f8ff",
+                    "error": "#ba1a1a",
+                    "on-primary": "#ffffff",
+                    "surface-container-low": "#fff0ee",
+                    "outline-variant": "#e6bdb8",
+                    "secondary": "#565e74",
+                    "primary-fixed-dim": "#ffb4ab",
+                    "on-primary-fixed-variant": "#93000b",
+                    "surface-variant": "#fbdbd7",
+                    "on-secondary-container": "#5c647a",
+                    "surface-bright": "#fff8f7",
+                    "background": "#fff8f7",
+                    "on-surface-variant": "#5c403c",
+                    "tertiary": "#005e8d",
+                    "on-secondary-fixed-variant": "#3f465c",
+                    "tertiary-fixed": "#cbe6ff",
+                    "on-error-container": "#93000a",
+                    "accent-red": "#dc2626",
+                    "brand-grey": "#f1f5f9"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "unit": "8px",
+                    "margin-mobile": "16px",
+                    "container-max": "1280px",
+                    "gutter": "24px",
+                    "margin-desktop": "40px",
+                    "section-padding": "80px",
+                    "stack-sm": "8px",
+                    "stack-md": "16px",
+                    "stack-lg": "32px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Inter"],
+                    "body-md": ["Inter"],
+                    "label-sm": ["Inter"],
+                    "headline-lg": ["Inter"],
+                    "title-lg": ["Inter"],
+                    "display-lg": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "label-md": ["Inter"],
+                    "headline-lg-mobile": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                    "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                    "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                    "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                    "title-lg": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                    "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                    "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                    "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500" }],
+                    "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "700" }]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; background-color: #ffffff; color: #0f172a; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body class="selection:bg-accent-red selection:text-white">
+<!-- TopNavBar -->
+<header class="bg-surface border-b border-outline-variant docked full-width top-0 sticky z-50">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-desktop w-full h-20">
+<div class="text-title-lg font-headline-lg font-bold text-primary">Vida Digital</div>
+<nav class="hidden md:flex items-center gap-stack-lg">
+<a class="text-label-md font-label-md text-on-surface-variant font-medium hover:text-primary transition-colors duration-200" href="index.html">Inicio</a>
+<a class="text-label-md font-label-md text-on-surface-variant font-medium hover:text-primary transition-colors duration-200" href="nosotros.html">Nosotros</a>
+<a class="text-label-md font-label-md text-on-surface-variant font-medium hover:text-primary transition-colors duration-200" href="catalogo.html">Catálogo</a>
+<a class="text-label-md font-label-md text-primary font-bold border-b-2 border-primary pb-1" href="marcas.html">Marcas Propias</a>
+<a class="text-label-md font-label-md text-on-surface-variant font-medium hover:text-primary transition-colors duration-200" href="contacto.html">Contacto</a>
+</nav>
+<div class="flex items-center gap-stack-md">
+<button class="text-label-md font-label-md px-stack-lg py-2 border border-outline-variant text-on-surface hover:bg-surface-container-low transition-all active:scale-95">Ingresar</button>
+<button class="md:hidden text-on-surface">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</header>
+<main>
+<!-- Hero Section / Intro -->
+<section class="relative py-section-padding overflow-hidden">
+<div class="absolute inset-0 opacity-5 pointer-events-none">
+<div class="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_50%_-20%,#dc2626,transparent_70%)]"></div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-desktop relative z-10">
+<div class="max-w-3xl">
+<span class="text-accent-red font-label-md text-label-md tracking-widest block mb-4 uppercase">Identidad y Calidad</span>
+<h1 class="text-display-lg font-display-lg mb-stack-lg leading-tight text-[#0f172a]">Nuestras Marcas</h1>
+<p class="text-body-lg font-body-lg text-secondary leading-relaxed">
+                        En Vida Digital, no solo importamos; creamos ecosistemas de valor. Nuestras marcas propias representan décadas de ingeniería y diseño estratégico, ofreciendo a nuestros socios mayoristas productos con un diferencial competitivo real en precio, tecnología y soporte post-venta. {{DATA:DOCUMENT:DOCUMENT_1}}
+                    </p>
+</div>
+</div>
+</section>
+<!-- Brand Section 1: Vida Digital -->
+<section class="py-section-padding border-t border-outline-variant">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+<div>
+<div class="flex items-center gap-4 mb-stack-md">
+<span class="px-3 py-1 bg-accent-red/10 text-accent-red border border-accent-red/20 text-label-sm font-label-sm">DESIGNED IN USA</span>
+</div>
+<h2 class="text-display-lg font-display-lg mb-2 text-[#0f172a]">Vida Digital</h2>
+<p class="text-headline-md font-headline-md text-accent-red mb-stack-lg italic">"Tecnología que se vende sola."</p>
+<div class="space-y-stack-md text-body-md font-body-md text-secondary">
+<p>Vida Digital es nuestra marca insignia de electrónica de consumo y accesorios de alta rotación. Enfocada en la eficiencia operativa y la satisfacción del usuario final, cada componente es seleccionado bajo estrictos estándares de calidad estadounidenses para garantizar durabilidad extrema.</p>
+<p>Nuestra línea abarca desde soluciones de conectividad empresarial hasta periféricos de última generación, permitiendo a los distribuidores capturar márgenes superiores con una tasa de retorno mínima.</p>
+</div>
+<div class="mt-stack-lg grid grid-cols-2 gap-stack-md">
+<div class="p-4 bg-brand-grey border border-outline-variant">
+<span class="material-symbols-outlined text-accent-red mb-2">high_quality</span>
+<h4 class="text-label-md font-label-md text-on-surface">Calidad Premium</h4>
+</div>
+<div class="p-4 bg-brand-grey border border-outline-variant">
+<span class="material-symbols-outlined text-accent-red mb-2">local_shipping</span>
+<h4 class="text-label-md font-label-md text-on-surface">Stock Inmediato</h4>
+</div>
+</div>
+</div>
+<div class="relative group">
+<div class="absolute -inset-4 bg-accent-red/5 rounded-xl blur-3xl opacity-50 group-hover:opacity-100 transition-opacity"></div>
+<div class="relative bg-white border border-outline-variant p-2 overflow-hidden aspect-[4/3]">
+<img alt="Vida Digital Product Line" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDk5Y6zzu1YWpwfm68eb5KsDdsdm-L5h2KspJpDBHRt-FxhcQGrpMgfu03mv2oQ3w0rkdeeuPCTyAiD_y-444wgxJb3CowXVOvgzIinCXm8JKa_jkbAxDyNsT4ZH-v8GFla2mYiecvgJDN26GpLI-2eKOeFGnpAizq-tJIrDBsSDJd2ibqA0iWCptgVgAR7eCbpDkaAzDdqx1UWV0bn1QhV3Y7P-JXfiDGuPbPEt5pduklOLXkTyFtA2PflNSh5R-hcdnTAZiJr8XcH"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Brand Section 2: Holystar (Alternating Layout) -->
+<section class="py-section-padding bg-brand-grey border-t border-outline-variant">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+<div class="order-2 md:order-1 relative group">
+<div class="absolute -inset-4 bg-primary/5 rounded-xl blur-3xl opacity-50 group-hover:opacity-100 transition-opacity"></div>
+<div class="relative bg-white border border-outline-variant p-2 overflow-hidden aspect-[4/3]">
+<img alt="Holystar Design Engineering" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoJYh9uB9tn8KaCq1y6S6jLeDB3xxGQ85KkKwZ84peMFBgWQAjt9cScNdYyuEii_niZza6jzov3NvAw4mSsEVh_W-vk1uqQmjyI1EMJ1OkYTH_ouyFSddg84rUCy-QNR5bk8fGQVhRMw4KwZ12vPpMXy_xfNq5gINSH7xntXuv7upxKYqdxIjRnkZ2Cebj5Ya1NpGwri2qTSEBrI4HwcRuXUJcZ8qrTSl5ue4E41owJE4lKPXY-0029jIaEXLRFGzcX4heos47Kn9h"/>
+</div>
+</div>
+<div class="order-1 md:order-2">
+<div class="flex items-center gap-4 mb-stack-md">
+<span class="px-3 py-1 bg-primary/10 text-primary border border-primary/20 text-label-sm font-label-sm">DESIGNED IN GERMANY</span>
+</div>
+<h2 class="text-display-lg font-display-lg mb-2 text-[#0f172a]">Holystar</h2>
+<p class="text-headline-md font-headline-md text-primary mb-stack-lg italic">"Diseño europeo, potencia global."</p>
+<div class="space-y-stack-md text-body-md font-body-md text-secondary">
+<p>Holystar representa la cúspide de la ingeniería aplicada a la logística y herramientas de precisión. Diseñada en Alemania, esta marca se especializa en robustez estructural y una estética minimalista que proyecta profesionalismo absoluto.</p>
+<p>Ideal para el mercado B2B exigente que busca no solo funcionalidad, sino una declaración de prestigio en sus inventarios. Holystar es sinónimo de rendimiento infalible en condiciones de uso intensivo.</p>
+</div>
+<div class="mt-stack-lg grid grid-cols-2 gap-stack-md">
+<div class="p-4 bg-white border border-outline-variant">
+<span class="material-symbols-outlined text-primary mb-2">precision_manufacturing</span>
+<h4 class="text-label-md font-label-md text-on-surface">Ingeniería Precisa</h4>
+</div>
+<div class="p-4 bg-white border border-outline-variant">
+<span class="material-symbols-outlined text-primary mb-2">verified</span>
+<h4 class="text-label-md font-label-md text-on-surface">Garantía Extendida</h4>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Exclusive Distribution CTA -->
+<section class="py-section-padding bg-white">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="bg-brand-grey border border-outline-variant p-stack-lg md:p-16 relative overflow-hidden text-center">
+<div class="absolute top-0 right-0 w-64 h-64 bg-accent-red/5 blur-[100px] rounded-full -mr-32 -mt-32"></div>
+<div class="absolute bottom-0 left-0 w-64 h-64 bg-primary/5 blur-[100px] rounded-full -ml-32 -mb-32"></div>
+<div class="relative z-10 max-w-2xl mx-auto">
+<h3 class="text-headline-lg font-headline-lg mb-stack-md text-[#0f172a]">¿Desea ser distribuidor oficial?</h3>
+<p class="text-body-md font-body-md text-secondary mb-stack-lg">
+                            Potencie su negocio con el respaldo de marcas de prestigio. Ofrecemos condiciones exclusivas para socios mayoristas y soporte técnico dedicado.
+                        </p>
+<div class="flex flex-col md:flex-row items-center justify-center gap-stack-md">
+<a class="w-full md:w-auto px-stack-lg py-4 bg-accent-red text-white font-label-md text-label-md hover:brightness-110 transition-all active:scale-95 text-center" href="contacto.html">
+                                Consultar disponibilidad de stock
+                            </a>
+<a class="w-full md:w-auto px-stack-lg py-4 border border-outline-variant text-[#0f172a] font-label-md text-label-md hover:bg-surface-container-low transition-all text-center" href="catalogo.html">
+                                Ver Catálogo Completo
+                            </a>
+</div>
+<div class="mt-12 pt-8 border-t border-outline-variant/30">
+<div class="inline-flex items-center gap-2 px-4 py-2 bg-white/80 rounded-full border border-outline-variant">
+<span class="material-symbols-outlined text-success-green text-sm" style="font-variation-settings: 'FILL' 1;">info</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">Distribución exclusiva por zona disponible. Consulte con su ejecutivo.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low border-t border-outline-variant">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter max-w-container-max mx-auto px-margin-desktop py-12 w-full">
+<div class="space-y-stack-md">
+<div class="text-headline-md font-headline-md text-primary">Vida Digital</div>
+<p class="text-body-md font-body-md text-on-surface-variant">Más de 25 años liderando la importación y distribución mayorista en la región.</p>
+<div class="flex items-center gap-2">
+<img alt="Google logo" class="w-5 h-5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxMEztb_Et4na6ppzNmLXr4IYSrVaJwZUgdaeVpTdDzvOqoiTIqhxOeXNB87a6fGPhPGXLVcs986KDKKS83iuus6Xvk_MrnRJfJbnyzUFk9crQpR6MsECylpMCDJd6bOIR9EQppMR3FwLcIo-b74_RoKuvp0fqFhW-UwTcxI54tBkkm87wFY3QKQY95eDEuXLM1SQNF_olaz4xnR1i_y2ArMoUM85xgowRmrEQt2LlRIpedXuO9LRlDHy-6-lC24A4u6OQeQOw0ajG"/>
+<span class="text-label-sm font-label-sm text-on-surface-variant">Google Rating 4.9/5 ★</span>
+</div>
+</div>
+<div class="space-y-stack-md">
+<h4 class="text-label-md font-label-md text-accent-red uppercase tracking-widest">Navegación</h4>
+<nav class="flex flex-col gap-2">
+<a class="text-body-md font-body-md text-on-surface-variant hover:text-primary underline transition-all" href="index.html">Inicio</a>
+<a class="text-body-md font-body-md text-on-surface-variant hover:text-primary underline transition-all" href="nosotros.html">Nosotros</a>
+<a class="text-body-md font-body-md text-on-surface-variant hover:text-primary underline transition-all" href="catalogo.html">Catálogo</a>
+<a class="text-body-md font-body-md text-primary font-semibold" href="marcas.html">Marcas Propias</a>
+</nav>
+</div>
+<div class="space-y-stack-md">
+<h4 class="text-label-md font-label-md text-accent-red uppercase tracking-widest">Legal</h4>
+<nav class="flex flex-col gap-2">
+<a class="text-body-md font-body-md text-on-surface-variant hover:text-primary underline transition-all" href="#">Términos y Condiciones</a>
+<a class="text-body-md font-body-md text-on-surface-variant hover:text-primary underline transition-all" href="#">Política de Privacidad</a>
+<a class="text-body-md font-body-md text-on-surface-variant hover:text-primary underline transition-all" href="#">Garantías</a>
+<a class="text-body-md font-body-md text-on-surface-variant hover:text-primary underline transition-all" href="contacto.html">Contacto</a>
+</nav>
+</div>
+<div class="space-y-stack-md">
+<h4 class="text-label-md font-label-md text-accent-red uppercase tracking-widest">Contacto</h4>
+<div class="text-body-md font-body-md text-on-surface-variant space-y-2">
+<p class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">location_on</span> ZOFRI, Manzana 12, Galpón 24, Iquique.</p>
+<p class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">call</span> (57) 226 2878</p>
+<p class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">mail</span> ventas@vidadigital.cl</p>
+</div>
+</div>
+</div>
+<div class="px-margin-desktop py-8 border-t border-outline-variant max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-label-sm font-label-sm text-on-surface-variant">
+<p>© 2024 Vida Digital. Todos los derechos reservados.</p>
+<div class="flex gap-stack-lg">
+<span class="cursor-pointer hover:text-primary transition-colors">LinkedIn</span>
+<span class="cursor-pointer hover:text-primary transition-colors">Instagram</span>
+<span class="cursor-pointer hover:text-primary transition-colors">Facebook</span>
+</div>
+</div>
+</footer>
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                        entry.target.classList.remove('opacity-0', 'translate-y-8');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('section').forEach(section => {
+                section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-8');
+                observer.observe(section);
+            });
+        });
+    </script>
+</body></html>
